@@ -1,11 +1,13 @@
 package duck;
 
 import duck.behaviors.FlyBehavior;
+import duck.behaviors.HopBehavior;
 import duck.behaviors.QuackBehavior;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
+    HopBehavior hopBehavior;
 
     public void Duck(){
     }
@@ -18,6 +20,10 @@ public abstract class Duck {
 
     public void performQuack() {
         quackBehavior.quack();
+    }
+
+    public void performHop() {
+        hopBehavior.hop();
     }
 
     public void swim() {
