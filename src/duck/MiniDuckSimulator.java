@@ -1,6 +1,5 @@
-import duck.Duck;
-import duck.MallardDuck;
-import duck.ModelDuck;
+package duck;
+
 import duck.behaviors.impl.FlyRocketPowered;
 
 public class MiniDuckSimulator {
