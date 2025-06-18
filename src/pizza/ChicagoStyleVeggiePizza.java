@@ -1,12 +1,19 @@
 package pizza;
 
+import pizza.ingredients.Dough;
+
 public class ChicagoStyleVeggiePizza extends Pizza {
     public ChicagoStyleVeggiePizza() {
         name = "Chicago Style Deep Dish Veggie Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+        dough = null;
+        sauce = null;
 
-        toppings.add("Shredded Mozzarella Veggie");
+//        toppings.add("Shredded Mozzarella Veggie");
+    }
+
+    @Override
+    void prepare() {
+//
     }
 
     void cut() {
