@@ -1,11 +1,16 @@
 package command;
 
 public class Light {
+    String location = "";
+
+    public Light(String location) {
+        this.location = location;
+    }
     public void on(){
-        System.out.println("Light is On!");
+        System.out.println(location + "light is On!");
     }
 
     public void off() {
-        System.out.println("Light is Off!");
+        System.out.println(location + "Light is Off!");
     }
 }
