@@ -1,9 +1,10 @@
 package iterator;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class CafeMenu {
+public class CafeMenu implements Menu{
     Map<String, MenuItem> menuitems = new HashMap<>();
 
     public CafeMenu() {
@@ -28,7 +29,12 @@ public class CafeMenu {
         menuitems.put(name, menuItem);
     }
 
-    public Map<String, MenuItem> getMenuitems() {
-        return menuitems;
+//    public Map<String, MenuItem> getMenuitems() {
+//        return menuitems;
+//    }
+
+    @Override
+    public Iterator<MenuItem> createIterator() {
+        return menuitems.values().iterator();
     }
 }
