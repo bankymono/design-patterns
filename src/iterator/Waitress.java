@@ -7,18 +7,26 @@ public class Waitress {
 //    Menu pancakeHouseMenu;
 //    Menu dinerMenu;
 //    Menu cafeMenu;
+    MenuComponent allMenus;
 
-    List<Menu> menus;
+//    List<MenuB> menus;
 
 //    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, CafeMenu cafeMenu) {
 //        this.pancakeHouseMenu = pancakeHouseMenu;
 //        this.dinerMenu = dinerMenu;
 //        this.cafeMenu = cafeMenu;
 //    }
-
-    public Waitress(List<Menu> menus) {
-        this.menus = menus;
+    public Waitress(MenuComponent menuComponent){
+        this.allMenus = menuComponent;
     }
+
+    public void printMenu(){
+        allMenus.print();
+    }
+
+//    public Waitress(List<MenuB> menus) {
+//        this.menus = menus;
+//    }
 
 //    public void printMenu(){
 //        Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
@@ -34,12 +42,12 @@ public class Waitress {
 //    }
 
 
-    public void printMenu(Iterator<MenuItem> iterator) {
-        while (iterator.hasNext()) {
-            MenuItem menuItem = iterator.next();
-            System.out.print(menuItem.getName() + ", ");
-            System.out.print(menuItem.getPrice() + " -- ");
-            System.out.println(menuItem.getDescription());
-        }
-    }
+//    public void printMenu(Iterator<MenuItem> iterator) {
+//        while (iterator.hasNext()) {
+//            MenuItem menuItem = iterator.next();
+//            System.out.print(menuItem.getName() + ", ");
+//            System.out.print(menuItem.getPrice() + " -- ");
+//            System.out.println(menuItem.getDescription());
+//        }
+//    }
 }
